@@ -48,7 +48,7 @@ function TextExpander({
 
   const displayText = isItExpanded
     ? children
-    : children.split(" ").slice(0, collapsedNumWords).join(" ");
+    : children.split(" ").slice(0, collapsedNumWords).join(" ") + '...';
 
   function handleExpansion() {
     setIsItExpanded(!isItExpanded);
